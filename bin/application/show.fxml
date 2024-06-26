@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="770.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.showController">
+   <children>
+      <AnchorPane fx:id="p" layoutX="35.0" layoutY="60.0" prefHeight="386.0" prefWidth="700.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <ImageView id="img" fx:id="img" disable="true" fitHeight="250.0" fitWidth="257.0" layoutX="15.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@crowns.png" />
+               </image>
+            </ImageView>
+            <Line endX="-100.00003051757812" endY="275.6000061035156" layoutX="404.0" layoutY="31.0" startX="-100.0" stroke="#f0a83a" />
+            <TextField fx:id="numQueen" layoutX="374.0" layoutY="74.0" prefHeight="44.0" prefWidth="250.0" promptText="Enter The Number Of Queens">
+               <font>
+                  <Font name="Andalus" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="BtN" layoutX="417.0" layoutY="248.0" mnemonicParsing="false" onAction="#solveBtn" prefHeight="82.0" prefWidth="177.0" style="-fx-background-color: orange;" text="Solve">
+               <font>
+                  <Font name="Andalus" size="37.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="posQueens" layoutX="374.0" layoutY="140.0" prefHeight="86.0" prefWidth="250.0" promptText="Enter The Queens position with comma between them">
+               <font>
+                  <Font name="Andalus" size="19.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
